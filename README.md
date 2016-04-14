@@ -2,6 +2,7 @@
 cacheMatrix.R contains two functions:
 * makeCacheMatrix()
 * cacheSolve()
+
 They will take a matrix and return its inverse and that inverse is cached, so that if it already exists, it will not be re-evaluated from scratch but retrieved from the cached value.
 
 ##An example of how to run the functions makeCacheMatrix and cacheSolve given in cacheMatrix.R
