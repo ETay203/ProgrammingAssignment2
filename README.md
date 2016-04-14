@@ -1,6 +1,6 @@
 ##cacheMatrix.R
-cacheMatrix.R contains two functions:
-makeCacheMatrix()
+*cacheMatrix.R contains two functions:
+*makeCacheMatrix()
 cacheSolve()
 They will take a matrix and return its inverse and that inverse is cached, so that if it already exists, it will not be re-evaluated from scratch but retrieved from the cached value.
 
@@ -18,7 +18,7 @@ That's it!  but if you want to see the power of caching in action, you can compa
 
 ##A function to calculate the time difference:
 
-cacheTimeDif = function(my_matrix){
+code(cacheTimeDif = function(my_matrix){
 
         x = makeCacheMatrix(my_matrix)
         
@@ -39,4 +39,4 @@ cacheTimeDif = function(my_matrix){
         ##Time difference between inverting matrix from scratch and retrieving cached value")
         TimeDif <- time_from_scratch - time_from_cache
         print(TimeDif)
-}
+})
